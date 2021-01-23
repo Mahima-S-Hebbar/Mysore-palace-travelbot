@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Web Speech AI chatbot</title>
+  </head>
+  <body>
+    <div class="bg-img"></div>
+     <div class="card">
+       <div class="container">
+         <h4><b>FAQ's</b></h4>
+         <p>Palace Timings</p> 
+         <p>Facilities Available</p>
+         <p>Taking Pictures</p>
+         <p>Main Attractions of the Palace</p>
+       </div>
+     </div> 
+    <section>
+      <h1 class="heading">Mysore Palace Travel-Bot</h1>
+
+      <button><i class="fa fa-microphone"></i></button>
+
+      <div>
+        <h2>You said: <em class="output-you"></em></h2>
+        <h2>Bot replied: <em class="output-bot"></em></h2>
+      </div>
+      
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      (function(d, m){
+          var kommunicateSettings = 
+              {"appId":"b0540aed704fcc9d921f340dbfbe0550","popupWidget":true,"automaticChatOpenOnNavigation":true};
+          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  </script>    
+  </body>
+</html>
